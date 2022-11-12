@@ -10,4 +10,5 @@ urlpatterns = [
     path('pizzas_de_la_mer', views.pizzasMer, name="pizzas_de_la_mer"),
     path('pizzas_exclusives', views.pizzasExclusives, name="pizzas_exclusives"),
     path('pizzas_vegetariennes', views.pizzasVegetariennes, name="pizzas_vegetariennes"),
+    path('<str:nom>', views.details, name="details"),
 ]

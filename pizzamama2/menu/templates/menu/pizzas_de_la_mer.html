@@ -1,0 +1,25 @@
+{% extends '../menu/base.html' %}
+ {% block title %}
+    <title>Les pizzas de la mer</title>
+{% endblock title %}
+{% block content %}
+    <div class="mt-[60px]">
+        <h1 class="bg-[#DD7835] mt-[80px] py-1 px-3 font-black text-2xl inline">Les pizzas de la mer</h1>
+    </div>
+
+    <div class="pl-[40px]">
+        {% for pizza in pizzas %}
+        <div class="menu_list_item">
+            <span class="menu_list_title title_color">{{pizza.nom}} </span>
+            <span class="menu_list_price">{{pizza.prix | floatformat:2}}€</span>
+            <span class="menu_list_ingredients">{{pizza.ingredients}}</span>
+            <span class="menu_list_category">{{pizza.category}}</span>
+            {% if pizza.vegetarienne %}
+                <span class="menu_list_vegetarienne">Végétarienne</span>
+            {% else %}
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock content %}

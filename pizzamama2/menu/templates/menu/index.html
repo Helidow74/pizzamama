@@ -1,51 +1,8 @@
-{% load tailwind_tags %}
-{% load static %}
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    {% tailwind_css %}
+{% extends '../menu/base.html' %}
+ {% block title %}
     <title>Toutes les pizzas</title>
-    <link rel="stylesheet" href="{% static 'menu/style.css' %}">
-
-</head>
-<body class="relative">
-    <header class="bg-slate-800 z-50 fixed top-0 w-full shadow">
-            <nav id="main-nav" class="bg-slate-800 max-w-8xl mx-auto p-6 py-4 flex items-center justify-between">
-                <a href="{% url 'main:main' %}" class="flex" aria-label="Page d'accueil">
-                    <img src="../static/menu/images/small_logo.png" class="lg:inline" alt="">
-                </a>
-                <button aria-label="toggle button" aria-expanded="false" id="menu-btn" class="cursor-pointer w-7 lg:hidden bg-white">
-                    <img src="../static/menu/images/menu.svg" alt="">
-                </button>
-                <ul id="toggled-menu" class="bg-white w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center lg:bg-slate-800 lg:mx-6 lg:static lg:z-10 lg:transform-none lg:border-none lg:flex-row lg:text-slate-200">
-                    <li class="py-4 lg:py-0 lg:mr-6">
-                        <a href="#trad" class="text-sm uppercase hover:text-amber-300 font-semibold w-full focus:text-rose-600">Pizzas Traditionnelles
-                        </a>
-                    </li>
-                    <li class="py-4 lg:py-0 lg:mr-6">
-                        <a href="#creme" class="text-sm uppercase hover:text-amber-300 font-semibold w-full focus:text-rose-600">Pizzas à la crème
-                        </a>
-                    </li>
-                    <li class="py-4 lg:py-0 lg:mr-6">
-                        <a href="#mer" class="text-sm uppercase hover:text-amber-300 font-semibold w-full focus:text-rose-600">Pizzas de la mer
-                        </a>
-                    </li>
-                    <li class="py-4 lg:py-0 lg:mr-6">
-                        <a href="#exclu" class="text-sm uppercase hover:text-amber-300 font-semibold w-full focus:text-rose-600">Pizzas Exclusives
-                        </a>
-                    </li>
-                    <li class="py-4 lg:py-0 lg:mr-6">
-                        <a href="#vegetarienne" class="text-sm uppercase hover:text-amber-300 font-semibold w-full focus:text-rose-600">Pizzas végétariennes
-                        </a>
-                    </li>
-                    <li class="py-4 lg:py-0 lg:mr-6">
-                        <a href="#toutes" class="text-sm uppercase hover:text-amber-300 font-semibold w-full focus:text-rose-600">Toutes les pizzas
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    <main class="flex flex-col mt-[30px]">
+    {% endblock title %}
+{% block content %}
         <div class="mt-[60px]">
             <h1 class="bg-[#DD7835] mt-[80px] py-1 px-3 font-black text-2xl inline">Toutes les pizzas</h1>
         </div>
@@ -64,7 +21,4 @@
             </div>
             {% endfor %}
         </div>
-    </main>
-    <script src="../static/script/script.js"></script>
-</body>
-</html>
+{% endblock content %}

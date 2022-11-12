@@ -19,6 +19,8 @@ sur l'icône "hamburger".
 - Création des différentes pages (avec extends du template de base)
 - Ajout des urls pour accéder aux différentes pages via les liens du menu
 - Création des différentes vues avec filtrage des données pour chaque page créée.
+- Ajout vue / template de détails de chaque pizza
+- Ajout des liens vers les pages de détails
 
 
 ---
@@ -28,21 +30,42 @@ sur l'icône "hamburger".
 ---
 
 ### Aperçu de la page responsive menu pour les grands écrans (WIP) :
-![Capture d’écran du 2022-11-08 17-38-52](https://user-images.githubusercontent.com/103674276/200623393-539e6775-48ec-401d-9896-f672479b781b.png)
+![Capture d’écran du 2022-11-12 21-15-36](https://user-images.githubusercontent.com/103674276/201492905-33ea88ef-de2e-4e2c-9000-882015ad2695.png)
 ---
 
 ### Aperçu de la page responsive menu pour moyens et petits écrans 1 (WIP) :
-![Capture d’écran du 2022-11-08 17-40-59](https://user-images.githubusercontent.com/103674276/200623870-a70ee621-2694-4619-84a3-9f6ff6bdc6ab.png)
+![Capture d’écran du 2022-11-12 21-19-02](https://user-images.githubusercontent.com/103674276/201492951-43d45e5c-37c0-4a4b-b7df-33d5e47d4859.png)
+
 ---
 
 ### Aperçu de la page responsive menu pour moyens et petits écrans après clic sur l'îcone "hamburger" (WIP) :
-![Capture d’écran du 2022-11-08 17-41-39](https://user-images.githubusercontent.com/103674276/200623985-903f3584-0b64-40af-bcef-a241b9d058ac.png)
+![Capture d’écran du 2022-11-12 21-19-43](https://user-images.githubusercontent.com/103674276/201492973-e78d550f-9cd0-4fd6-bb7f-775fe06f43bc.png)
+
 
 ---
 
 ### Aperçu de la page "Pizzas traditionnelles"(filtre par catégorie) :
-![Capture d’écran du 2022-11-12 14-47-56](https://user-images.githubusercontent.com/103674276/201477127-4f9b3cbb-3f85-421a-b065-7ad0405a431a.png)
+![Capture d’écran du 2022-11-12 21-20-49](https://user-images.githubusercontent.com/103674276/201493025-f782ee23-593d-4a62-a80e-5044e7317fe4.png)
+
 
 ---
 ### Aperçu de la page "Pizzas végétariennes" (filtre par propriété) :
-![Capture d’écran du 2022-11-12 14-52-10](https://user-images.githubusercontent.com/103674276/201477245-7b630af5-b0fb-4039-b740-a46f7aa9f1d1.png)
+![Capture d’écran du 2022-11-12 21-21-30](https://user-images.githubusercontent.com/103674276/201493048-49151ebe-56a2-487a-ace0-1b537b78a258.png)
+
+
+---
+### Aperçu d'une page détails de pizza (WIP):
+![Capture d’écran du 2022-11-12 21-22-47](https://user-images.githubusercontent.com/103674276/201493089-ee6aafc9-3ffe-4155-b379-ca9c8a076d57.png)
+
+---
+### Aperçu d'une page détails de pizza en version moyens et petits écrans (WIP):
+![Capture d’écran du 2022-11-12 21-24-06](https://user-images.githubusercontent.com/103674276/201493134-c50b31ec-ab21-4fc2-9f8e-9dbe5064d2af.png)
+
+
+
+
+
+
+
+
+

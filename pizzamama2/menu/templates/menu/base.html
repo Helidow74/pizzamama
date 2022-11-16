@@ -1,3 +1,4 @@
+<!doctype html>
 {% load tailwind_tags %}
 {% load static %}
 <html lang="fr">
@@ -42,6 +43,11 @@
                     <li class="py-4 lg:py-0 lg:mr-6">
                         <a href="{% url 'menu:index' %}" class="text-sm uppercase hover:text-amber-300 font-semibold w-full focus:text-rose-600">Toutes les pizzas
                         </a>
+                    </li>
+                     <li class="py-4 lg:py-0 lg:mr-6">
+                       <a href="#panier" class="flex" aria-label="Panier">
+                           <img src="../static/menu/images/panier.png" class="lg:inline lg:ml-10 h-5" alt="panier">
+                       </a>
                     </li>
                 </ul>
             </nav>

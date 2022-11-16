@@ -70,3 +70,17 @@ body {
     margin-bottom: 11px;
 }
 
+main{
+    animation: transitionIn 0.8s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

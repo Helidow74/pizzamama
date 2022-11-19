@@ -3,7 +3,7 @@ from .models import Pizza, Category
 
 
 class PizzaAdmin(admin.ModelAdmin):
-    list_display = ('nom', 'ingredients', 'vegetarienne', 'prix', 'category')
+    list_display = ('nom', 'ingredients', 'vegetarienne', 'prix', 'category', 'image')
     search_help_text = "Rechercher par nom de pizza"
     search_fields = ['nom']
 

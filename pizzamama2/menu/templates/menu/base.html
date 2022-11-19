@@ -1,9 +1,11 @@
 <!doctype html>
 {% load tailwind_tags %}
 {% load static %}
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% tailwind_css %}
     {% block title %}
     {% endblock title %}
@@ -14,12 +16,12 @@
     <header class="bg-slate-800 z-50 fixed top-0 w-full shadow">
             <nav id="main-nav" class="bg-slate-800 max-w-8xl mx-auto p-6 py-4 flex items-center justify-between">
                 <a href="{% url 'main:main' %}" class="flex" aria-label="Page d'accueil">
-                    <img src="../static/menu/images/small_logo.png" class="lg:inline" alt="">
+                    <img src="../static/menu/images/small_logo.png" class="xl:inline" alt="">
                 </a>
-                <button aria-label="toggle button" aria-expanded="false" id="menu-btn" class="cursor-pointer w-7 lg:hidden bg-white">
+                <button aria-label="toggle button" aria-expanded="false" id="menu-btn" class="cursor-pointer w-7 xl:hidden bg-white">
                     <img src="../static/menu/images/menu.svg" alt="">
                 </button>
-                <ul id="toggled-menu" class="bg-white w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center lg:bg-slate-800 lg:mx-6 lg:static lg:z-10 lg:transform-none lg:border-none lg:flex-row lg:text-slate-200">
+                <ul id="toggled-menu" class="bg-white w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center xl:bg-slate-800 xl:mx-6 xl:static xl:z-10 xl:transform-none xl:border-none xl:flex-row xl:text-slate-200">
                     <li class="py-4 lg:py-0 lg:mr-6">
                         <a href="{% url 'menu:pizzas_traditionnelles' %}" class="text-sm uppercase hover:text-amber-300 font-semibold w-full focus:text-rose-600">Pizzas Traditionnelles
                         </a>

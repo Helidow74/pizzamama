@@ -26,6 +26,7 @@ class Pizza(models.Model):
     vegetarienne = models.BooleanField(default=False)
     description = models.TextField(default=" ")
     category = ForeignKey(Category, related_name="Categorie", on_delete=models.CASCADE, default=1)
+    image = models.ImageField(upload_to='static/menu/images/pizzas', blank=True)
 
     class Meta:
         ordering = ['category']

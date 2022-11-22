@@ -21,7 +21,7 @@
                 <button aria-label="toggle button" aria-expanded="false" id="menu-btn" class="cursor-pointer w-7 bg-white">
                     <img src="../static/menu/images/menu.svg" alt="">
                 </button>
-                <ul id="toggled-menu" class="bg-white p-3 w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center xl:bg-slate-800 xl:mx-6 xl:static xl:z-10 xl:transform-none xl:border-none xl:flex-row xl:text-slate-200">
+                <ul id="toggled-menu" class="bg-white p-3 w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center">
                     <li class="py-2">
                         <a href="{% url 'menu:pizzas_traditionnelles' %}" class="text-sm uppercase hover:text-amber-300 font-semibold w-full focus:text-rose-600">Pizzas Traditionnelles
                         </a>
@@ -48,7 +48,7 @@
                     </li>
                      <li class="py-2">
                        <a href="#panier" class="flex" aria-label="Panier">
-                           <img src="../static/menu/images/panier.png" class="lg:inline lg:ml-10 h-5" alt="panier">
+                           <img src="../static/menu/images/panier.png" class="h-5" alt="panier">
                        </a>
                     </li>
                 </ul>
